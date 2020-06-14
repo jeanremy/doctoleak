@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Doctoleak",
+  "version": "0.1.0",
+
+  "description": "Display data shared by doctolib",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.doctolib.fr/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
